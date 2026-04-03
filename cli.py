@@ -23,14 +23,14 @@ parser.add_argument("--price", type=float, help="Required for LIMIT")
 args = parser.parse_args()
 
 try:
-    # ✅ Validation
+    # Validation
     validate_side(args.side)
     validate_order_type(args.type)
     validate_quantity(args.quantity)
 
     client = BinanceClient(API_KEY, API_SECRET)
 
-    # 📤 Request
+    # Request
     print("\n📤 ORDER REQUEST")
     print(f"Symbol: {args.symbol}")
     print(f"Side: {args.side}")
@@ -39,7 +39,7 @@ try:
     if args.type == "LIMIT":
         print(f"Price: {args.price}")
 
-    # 🚀 Place Order
+    # Place Order
     response = create_order(
         client,
         args.symbol,
@@ -49,7 +49,7 @@ try:
         args.price
     )
 
-    # 📥 Response
+    # Response
     print("\n📥 ORDER RESPONSE")
 
     print(f"Order ID: {response.get('orderId')}")
