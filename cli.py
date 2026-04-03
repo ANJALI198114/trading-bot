@@ -31,7 +31,7 @@ try:
     client = BinanceClient(API_KEY, API_SECRET)
 
     # Request
-    print("\n📤 ORDER REQUEST")
+    print("\n ORDER REQUEST")
     print(f"Symbol: {args.symbol}")
     print(f"Side: {args.side}")
     print(f"Type: {args.type}")
@@ -50,7 +50,7 @@ try:
     )
 
     # Response
-    print("\n📥 ORDER RESPONSE")
+    print("\n ORDER RESPONSE")
 
     print(f"Order ID: {response.get('orderId')}")
     print(f"Status: {response.get('status')}")
@@ -63,5 +63,5 @@ try:
     logging.info(f"SUCCESS: {response}")
 
 except Exception as e:
-    print("\n❌ ERROR:", str(e))
+    print("\n ERROR:", str(e))
     logging.error(f"ERROR: {str(e)}")
