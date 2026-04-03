@@ -1,0 +1,21 @@
+=== MARKET ORDER LOG ===
+2026-04-03 22:09:24,766 - INFO - SUCCESS:
+Order ID: 805265
+Status: FILLED
+Executed Qty: 0.001
+Avg Price: market_price
+Note: Simulated order (API unavailable)
+
+=== LIMIT ORDER LOG ===
+2026-04-03 22:09:42,300 - INFO - SUCCESS:
+Order ID: 580087
+Status: FILLED
+Executed Qty: 0.001
+Avg Price: 60000.0
+Note: Simulated order (API unavailable)
+
+=== ERROR HANDLING LOGS ===
+2026-04-03 22:22:08 - ERROR: Side must be BUY or SELL
+2026-04-03 22:22:17 - ERROR: Order type must be MARKET or LIMIT
+2026-04-03 22:22:25 - ERROR: Price is required for LIMIT orders
+2026-04-03 22:22:33 - ERROR: Quantity must be greater than 0
