@@ -1,0 +1,8 @@
+2026-04-03 22:09:24,766 - INFO - SUCCESS: {'orderId': 805265, 'status': 'FILLED', 'executedQty': 0.001, 'avgPrice': 'market_price', 'note': 'Simulated order (API unavailable)'}
+2026-04-03 22:09:42,300 - INFO - SUCCESS: {'orderId': 580087, 'status': 'FILLED', 'executedQty': 0.001, 'avgPrice': 60000.0, 'note': 'Simulated order (API unavailable)'}
+2026-04-03 22:21:47,914 - INFO - SUCCESS: {'orderId': 647159, 'status': 'FILLED', 'executedQty': 0.001, 'avgPrice': 'market_price', 'note': 'Simulated order (API unavailable)'}
+2026-04-03 22:22:00,799 - INFO - SUCCESS: {'orderId': 772597, 'status': 'FILLED', 'executedQty': 0.001, 'avgPrice': 60000.0, 'note': 'Simulated order (API unavailable)'}
+2026-04-03 22:22:08,551 - ERROR - ERROR: Side must be BUY or SELL
+2026-04-03 22:22:17,307 - ERROR - ERROR: Order type must be MARKET or LIMIT
+2026-04-03 22:22:25,024 - ERROR - ERROR: Price is required for LIMIT orders
+2026-04-03 22:22:33,963 - ERROR - ERROR: Quantity must be greater than 0
