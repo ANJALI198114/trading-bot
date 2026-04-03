@@ -1,10 +1,10 @@
-# 🚀 Binance Futures Trading Bot (Testnet)
+# Binance Futures Trading Bot (Testnet)
 
 A CLI-based Python trading bot that places MARKET and LIMIT orders on Binance Futures Testnet with proper structure, validation, logging, and error handling.
 
 ---
 
-## 📌 Features
+## Features
 
 * Place **MARKET** and **LIMIT** orders
 * Supports both **BUY** and **SELL**
@@ -16,7 +16,7 @@ A CLI-based Python trading bot that places MARKET and LIMIT orders on Binance Fu
 
 ---
 
-## 🧱 Project Structure
+## Project Structure
 
 ```
 trading_bot/
@@ -34,9 +34,9 @@ trading_bot/
 
 ---
 
-## ⚙️ Setup Instructions
+## Setup Instructions
 
-### 1. Clone the repository
+### Clone the repository
 
 ```
 git clone <your-repo-link>
@@ -45,7 +45,7 @@ cd trading_bot
 
 ---
 
-### 2. Install dependencies
+### Install dependencies
 
 ```
 pip install -r requirements.txt
@@ -53,7 +53,7 @@ pip install -r requirements.txt
 
 ---
 
-### 3. Configure API Keys (Optional)
+### Configure API Keys (Optional)
 
 You can add your Binance API keys in `cli.py`:
 
@@ -66,9 +66,9 @@ API_SECRET = "your_api_secret"
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
-### 🔹 MARKET Order
+### MARKET Order
 
 ```
 python cli.py --symbol BTCUSDT --side BUY --type MARKET --quantity 0.001
@@ -76,7 +76,7 @@ python cli.py --symbol BTCUSDT --side BUY --type MARKET --quantity 0.001
 
 ---
 
-### 🔹 LIMIT Order
+### LIMIT Order
 
 ```
 python cli.py --symbol BTCUSDT --side SELL --type LIMIT --quantity 0.001 --price 60000
@@ -84,18 +84,18 @@ python cli.py --symbol BTCUSDT --side SELL --type LIMIT --quantity 0.001 --price
 
 ---
 
-## 📤 Sample Output
+## Sample Output
 
 ```
-📤 ORDER REQUEST
+ ORDER REQUEST
 Symbol: BTCUSDT
 Side: BUY
 Type: MARKET
 Quantity: 0.001
 
-⚠️ API failed, switching to simulated order...
+ API failed, switching to simulated order...
 
-📥 ORDER RESPONSE
+ ORDER RESPONSE
 Order ID: 123456
 Status: FILLED
 Executed Qty: 0.001
@@ -105,7 +105,7 @@ Note: Simulated order (API unavailable)
 
 ---
 
-## 📝 Logging
+##  Logging
 
 All API requests, responses, and errors are logged in:
 
@@ -115,7 +115,7 @@ bot.log
 
 ---
 
-## ⚠️ Error Handling
+## Error Handling
 
 The application handles:
 
@@ -125,13 +125,13 @@ The application handles:
 
 ---
 
-## 🔄 Fallback Mechanism
+## Fallback Mechanism
 
 If Binance API is unavailable or restricted, the bot automatically switches to a simulated order system to ensure uninterrupted functionality.
 
 ---
 
-## 🧠 Assumptions
+## Assumptions
 
 * User provides a valid trading symbol (e.g., BTCUSDT)
 * Quantity is a positive number
@@ -139,7 +139,7 @@ If Binance API is unavailable or restricted, the bot automatically switches to a
 
 ---
 
-## 🎯 Highlights
+## Highlights
 
 * Clean and modular architecture
 * Production-like error handling
@@ -148,7 +148,7 @@ If Binance API is unavailable or restricted, the bot automatically switches to a
 
 ---
 
-## 🚀 Future Improvements
+## Future Improvements
 
 * Add Stop-Limit / OCO orders
 * Interactive CLI (menu-based UI)
@@ -157,7 +157,7 @@ If Binance API is unavailable or restricted, the bot automatically switches to a
 
 ---
 
-## 👩‍💻 Author
+## Author
 
 **Anjali Aggarwal**
 BTech CSE (AI) | MERN Stack Developer
