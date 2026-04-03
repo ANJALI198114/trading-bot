@@ -20,7 +20,7 @@ def create_order(client, symbol, side, order_type, quantity, price=None):
 
     except Exception as e:
         
-        print("⚠️ API failed, switching to simulated order...")
+        print("API failed, switching to simulated order...")
 
         return {
             "orderId": random.randint(100000, 999999),
