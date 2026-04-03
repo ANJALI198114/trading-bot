@@ -5,7 +5,7 @@ class BinanceClient:
         self.client = Client(
             api_key,
             api_secret,
-            testnet=True  # try testnet
+            testnet=True 
         )
 
     def place_order(self, **params):
