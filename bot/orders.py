@@ -15,11 +15,11 @@ def create_order(client, symbol, side, order_type, quantity, price=None):
         params["timeInForce"] = "GTC"
 
     try:
-        # 🔥 Try real API
+       
         return client.place_order(**params)
 
     except Exception as e:
-        # 🔥 Fallback simulation (SHORTLIST MAGIC ⭐)
+        
         print("⚠️ API failed, switching to simulated order...")
 
         return {
